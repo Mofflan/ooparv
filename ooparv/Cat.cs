@@ -8,12 +8,17 @@ namespace ooparv
     {
 
 
-        public override void MakeSound()
+        public override void MakeSound() => Console.WriteLine("The cat says: meow meow");
+
+        public override void Eating()
         {
-            Console.WriteLine("The cat says: meow meow");
+            throw new NotImplementedException();
         }
 
-
+        public override void Cleaning()
+        {
+            throw new NotImplementedException();
+        }
 
 
 

@@ -8,13 +8,19 @@ namespace ooparv
     {
 
 
-        public override void MakeSound()
+        public override void MakeSound() => Console.WriteLine("The pig says: Oink Oink");
+
+
+
+        public override void Eating()
         {
-            Console.WriteLine("The pig says: Oink Oink");
+            throw new NotImplementedException();
         }
 
-
-
+        public override void Cleaning()
+        {
+            throw new NotImplementedException();
+        }
 
 
 
