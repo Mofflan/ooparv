@@ -6,10 +6,11 @@ namespace ooparv
     {
 
 
-        //public Dog(string aName, int aAge)
-        //{
+        public Dog(string name, int age, double weight, eHabitat habitat, bool isDomesticicated)
+          : base(name, age, weight, habitat, isDomesticicated)
+        {
 
-        //}
+        }
 
 
         public override void MakeSound() => Console.WriteLine("The dog says: Woof Woof");

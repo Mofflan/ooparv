@@ -4,15 +4,16 @@
     {
         static void Main(string[] args)
         {
-            Dog dog = new Dog();
-            Pig pig = new Pig();
-            Cat cat = new Cat();
+            Dog dog = new Dog("Kent",3,12.4,eHabitat.Home,true);
+
+            dog.PrintAnimalInfo();
+            //Pig pig = new Pig();
+            //Cat cat = new Cat();
            
 
-            dog.test();
             dog.MakeSound();
-            pig.MakeSound();
-            cat.MakeSound();
+            //pig.MakeSound();
+            //cat.MakeSound();
             
 
         }
