@@ -26,8 +26,6 @@ namespace ooparv
             throw new NotImplementedException();
         }
 
-        public void test()
-        { }
 
     }
 }

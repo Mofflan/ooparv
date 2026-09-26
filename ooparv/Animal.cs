@@ -5,6 +5,8 @@
         Home,
         Forest,
         Farm,
+        Desert,
+        Ocean,
         Unknown
 
     }
@@ -25,7 +27,7 @@
         public string Name { get; set; } = "Unknown";
         public int Age { get; set; } = -1;
         public double Weight { get; set; } = -1;
-        public eHabitat Habitat { get; set; }
+        public eHabitat Habitat { get; set; } = eHabitat.Unknown;
         public bool IsDomesticated { get; set; }
 
         public abstract void MakeSound();
