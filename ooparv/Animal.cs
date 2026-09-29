@@ -34,7 +34,7 @@
         public abstract void Cleaning();
         public abstract void Guarding();
 
-        public void Eating() => Console.WriteLine($"{Name} is eating");
+        public void Eating() => Console.WriteLine($"{Name} is eating\n");
 
         public void PrintAnimalInfo()
         {
