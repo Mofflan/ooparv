@@ -6,6 +6,7 @@ namespace ooparv
 {
     internal class Pig : Animal
     {
+        private string egenskap = "pig egenskap";
 
         public Pig(string name, int age, double weight, eHabitat habitat, bool isDomesticicated)
             : base (name,age,weight,habitat,isDomesticicated)
@@ -17,7 +18,7 @@ namespace ooparv
 
         public override void MakeSound() => Console.WriteLine($"The Pig {Name} says: Oink Oink");
 
-
+        public void Hungry() => Console.WriteLine("Hungry"); //Pig egna metod
 
 
 

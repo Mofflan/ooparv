@@ -4,8 +4,8 @@ namespace ooparv
 {
     internal class Dog : Animal
     {
-        public string Name { get; set; }
-        private bool myIsTrained = false;
+        private bool myIsTrained = false; // Dog egna egenskap
+
         public Dog() { }
         public Dog(string name, int age, double weight, eHabitat habitat, bool isDomesticicated, bool isTrained)
           : base(name, age, weight, habitat, isDomesticicated)
@@ -16,8 +16,8 @@ namespace ooparv
 
         public override void MakeSound() => Console.WriteLine($"The dog {Name} says: Woof Woof");
         public override void Guarding() => Console.WriteLine("Guarding Normally");
-
-        public void IsTrained() => Console.WriteLine($"Dog trained: {myIsTrained}");
+        // Dog egna metod
+        public void IsTrained() => Console.WriteLine($"Dog trained: {myIsTrained}"); 
 
         public override void Cleaning() => Console.WriteLine("Bathing");
 

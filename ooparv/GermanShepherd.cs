@@ -5,6 +5,8 @@ namespace ooparv
 {
     internal class GermanShepherd : Dog
     {
+        private string egenskap = "egenskap"; // klassen egna egenskap
+
         public GermanShepherd()
         {
 
@@ -22,6 +24,7 @@ namespace ooparv
         public override void Guarding() => Console.WriteLine("Guarding intensely, very vigilant");
 
         public override void Cleaning() => Console.WriteLine("happily bathing");
+        public void Dancing() => Console.WriteLine("Dancing");//klassen egna metod
 
 
 

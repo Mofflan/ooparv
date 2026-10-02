@@ -1,6 +1,6 @@
 ﻿namespace ooparv
 {
-    enum eHabitat
+    internal enum eHabitat
     {
         Home,
         Forest,
@@ -12,12 +12,13 @@
     }
     internal abstract class Animal
     {
-//
-        public string Name { get; set; } = "Unknown";
-        public int Age { get; set; } = -1;
-        public double Weight { get; set; } = -1;
-        public eHabitat Habitat { get; set; } = eHabitat.Unknown;
-        public bool IsDomesticated { get; set; } = false;
+
+
+        protected string Name { get; set; } = "Unknown";
+        private int Age { get; set; } = -1;
+        private double Weight { get; set; } = -1;
+        private eHabitat Habitat { get; set; } = eHabitat.Unknown;
+        private bool IsDomesticated { get; set; } = false;
 
         protected Animal() { }
         protected Animal(string name, int age, double weight, eHabitat habitat, bool isDomesticicated)
