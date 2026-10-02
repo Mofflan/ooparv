@@ -12,7 +12,7 @@
     }
     internal abstract class Animal
     {
-
+//
         public string Name { get; set; } = "Unknown";
         public int Age { get; set; } = -1;
         public double Weight { get; set; } = -1;
